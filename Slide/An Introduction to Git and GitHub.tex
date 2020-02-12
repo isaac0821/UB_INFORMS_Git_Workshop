@@ -106,8 +106,27 @@
 				\frametitle{Commit}
 				\begin{itemize}
 					\item Step 0: Check changes using \texttt{git status}
-					\item Step 1: Add changes
+					\item Step 1.1: Add changes by \texttt{git add <filename>} or add all changes by \texttt{git add -A}
+					\item Step 1.2: Discard changes by \texttt{git checkout <filename>}
+					\item Step 2: Commit
 				\end{itemize}
+			\end{frame}
+
+		\subsection{Pull/push}
+			\begin{frame}
+				\begin{itemize}
+					\item \texttt{git pull origin <branch>}
+				\end{itemize}
+				From remote pull changes into local.
+
+				\begin{itemize}
+					\item \texttt{git push origin <branch>}
+				\end{itemize}
+				Sync remote repository with local repository
+
+				\begin{alertblock}[Important]
+					Always remember to pull before start editing
+				\end{alertblock}
 			\end{frame}
 
 		\subsection{Merge}
@@ -123,7 +142,7 @@
 				\frametitle{Conflict}
 				When could be conflict?
 				\begin{itemize}
-					\item 
+					\item For some files, 
 				\end{itemize}
 			\end{frame}
 
@@ -135,6 +154,10 @@
 					\item Sync with master branch more often
 					\item Commit with small changes (it depends)
 				\end{itemize}
+			\end{frame}
+
+			\begin{frame}
+				For binary files (e.g., \texttt{.pdf}, \texttt{.exe}, \texttt{.docx}, \texttt{.dll}), it is hard to merge them. What we can do is choose a version
 			\end{frame}
 
 		\subsection{Revert/Reset}
