@@ -27,7 +27,7 @@
 				\frametitle{Version Control}
 				\begin{align}
 					\centering
-					\includegraphics[height=6cm]{version_control} \nonumber
+					\includegraphics[height=5cm]{version_control} \nonumber
 				\end{align}			
 			\end{frame}
 
@@ -37,12 +37,17 @@
 				\begin{itemize}
 					\item Too messy, hard to find the latest (time stamps sometimes can't help)
 					\item Cannot compare the difference between each version
-					\item 
+					\item Cannot merge changes in different edition from one or more participants
+					\item Cannot keep track of changes
 				\end{itemize}
 			\end{frame}
 		\subsection{Git}
 			\begin{frame}
-				Solution: Git
+				Git is a distributed version-control system for tracking changes in source code during software development.It is designed for coordinating work among programmers, but it can be used to track changes in any set of files.
+				\begin{align}
+					\centering
+					\includegraphics[height=4cm]{git-branches-merge} \nonumber
+				\end{align}
 			\end{frame}
 
 	\section{Git and GitHub}
@@ -128,7 +133,7 @@
 		\subsection{Commit}
 			\begin{frame}
 				\frametitle{Commit}
-				The following are steps for commiting\texttt{git checkout -b [branchName]}
+				The following are steps for commit
 				\begin{itemize}
 					\item Step 0: Check changes using \texttt{git status}
 					\item Step 1.1: Add changes by \texttt{git add <filename>} or add all changes by \texttt{git add -A}
