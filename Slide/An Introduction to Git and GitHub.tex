@@ -16,10 +16,10 @@
 \begin{document}
 	\frame{\titlepage}
 	
-	\begin{frame}
-		\frametitle{Outline}
-		\tableofcontents
-	\end{frame}
+	% \begin{frame}
+	% 	\frametitle{Outline}
+	% 	\tableofcontents
+	% \end{frame}
 
 	\section{Version control and Git}
 		\subsection{Info}
@@ -85,9 +85,8 @@
 			\begin{frame}
 				\frametitle{GitHub}
 				\begin{itemize}
-					\item A/the global company that provides hosting for software development version control using Git
-					\item A website Microsoft just bought for \$7.5 billion dollar
-					\item A website that you can goof around when you are bored at coding and don't need to worry about getting caught by your manager (she/he might be doing the same thing)
+					\item A/the global company that provides hosting for software development version control using Git.
+					\item A website that you can goof around when you are bored at coding and don't need to worry about getting caught by your manager (she/he might be doing the same thing).
 				\end{itemize}
 			\end{frame}
 
@@ -147,7 +146,7 @@
 				\end{itemize}
 				After commit, the next step is push it to remote.
 
-				If you don't want to commit to remote and wnt to undo it
+				If you don't want to commit to remote and want to undo it
 				\begin{itemize}
 					\item Step 1: Find commit hash, \texttt{git log}
 					\item Step 2: Revert commit, \texttt{git revert [commitHash]}, it actually create a new commit to revert this commit
@@ -174,6 +173,11 @@
 				\begin{alertblock}{Important}
 					Always remember to pull before start editing, otherwise you might have conflicts
 				\end{alertblock}
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\texttt{.gitignore}}
+				\texttt{.gitignore} is a list of rules that will be ignored when you are committing changes, when creating repo from GitHub, GitHub provides easy ways to choose different \texttt{.gitignore} file templates.
 			\end{frame}
 
 		\subsection{Merge}
@@ -228,7 +232,7 @@
 				\end{itemize}
 			\end{frame}
 
-	\section{Collaborate through GitHub}
+	\section{Contribute to other's repository}
 		\subsection{Fork/Pull Request}
 			\begin{frame}
 				\frametitle{GitHub Workflow}
@@ -237,6 +241,7 @@
 					\includegraphics[width=\textwidth]{github-workflow}
 				\end{figure}
 			\end{frame}
+
 			\begin{frame}
 				\frametitle{Fork/Pull Request}
 				\begin{itemize}
@@ -245,4 +250,14 @@
 				\end{itemize}				
 			\end{frame}
 
+			\begin{frame}
+				\frametitle{Keep track of forked repo}
+				\begin{itemize}
+					\item \texttt{git remote add upstream URL\_OF\_ORIGINAL\_OWNER} Designate the original owner as the ``upstream''
+					\item \texttt{git fetch upstream} Fetch the latest update from original owner
+					\item \texttt{git checkout master} Check out to master branch in your forked repo
+					\item \texttt{git merge upstream/master} Merge the changes in the original owner into your repo
+					\item \texttt{git push origin master} Update your master branch
+				\end{itemize}					
+			\end{frame}
 \end{document}
