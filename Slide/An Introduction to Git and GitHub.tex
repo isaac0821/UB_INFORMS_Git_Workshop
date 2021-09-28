@@ -8,7 +8,7 @@
 
 \usepackage{listings}
 
-\title{An Introduction to Git and GitHub}
+\title{Introduction to Git and GitHub}
 \author{Lan Peng}
 \institute{Department of Industrial and Systems Engineering, University at Buffalo, SUNY}
 \date{\today}
@@ -24,7 +24,7 @@
 	\section{Version control and Git}
 		\subsection{Info}
 			\begin{frame}
-				Feel free to check this slide on\\
+				Feel free to check out this slide on\\
 				\url{https://github.com/isaac0821/UB-INFORMS-Git-Workshop}				
 			\end{frame}
 		\subsection{Version control}
@@ -91,7 +91,7 @@
 				\end{itemize}
 			\end{frame}
 
-	\section{Using Git and GitHub}
+	\section{Using Git}
 		\subsection{Initialize/Clone}
 			\begin{frame}
 				\frametitle{Initialize/Clone}
@@ -176,18 +176,13 @@
 				\end{alertblock}
 			\end{frame}
 
-		\subsection{Merge, Pull request}
+		\subsection{Merge}
 			\begin{frame}
 				\frametitle{Merge}
 				\begin{itemize}
 					\item Step 1. Go to the branch you need to merge into (e.g. master)
 					\item Step 2. \texttt{git merge <branch>}
 				\end{itemize}
-			\end{frame}
-
-			\begin{frame}
-				\frametitle{Pull Request}
-				On GitHub website, you can find a buttom named \texttt{New pull request}. It ``requests'' the owner/admin of the repository to do a ``pull'' from your branch. After the owner pull your branch, your branch in remote will be deleted, but you will still have your local copy so the workflow will not be affected.
 			\end{frame}
 
 		\subsection{Conflict}
@@ -227,18 +222,27 @@
 				\frametitle{Tip}
 				We don't like to merge changes in the same file, here are some tips to avoid that:
 				\begin{itemize}
-					\item Design by module, break large files into smaller files. Each group member works on separated file, have someone (e.g., team leader) design the interface between modules
+					\item Design by module, break large files into small files. Each group member works on a separated file, have someone (e.g., team leader) design the interface between modules
 					\item Sync with master branch more often
 					\item Commit with small changes (it depends)
 				\end{itemize}
 			\end{frame}
-		\subsection{Revert/Reset}
 
-		\subsection{Others}
-			Your can try some other commands... just for fun
-			\begin{itemize}
-				\item \texttt{git diff}
-				\item \texttt{git log}
-			\end{itemize}
+	\section{Collaborate through GitHub}
+		\subsection{Fork/Pull Request}
+			\begin{frame}
+				\frametitle{GitHub Workflow}
+				\begin{figure}[!h]
+					\centering
+					\includegraphics[width=\textwidth]{github-workflow}
+				\end{figure}
+			\end{frame}
+			\begin{frame}
+				\frametitle{Fork/Pull Request}
+				\begin{itemize}
+					\item \textbf{Fork:} Make a copy of an existing repository under your account. 
+					\item \textbf{Pull Request: }On GitHub website, you can find a button named \texttt{New pull request}. It ``requests'' the owner/admin of the repository to do a ``pull'' from your branch/repository. After the owner pull your branch, your branch in remote will be deleted, but you will still have your local copy so the workflow will not be affected.
+				\end{itemize}				
+			\end{frame}
 
 \end{document}
